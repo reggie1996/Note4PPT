@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:id="@+id/ll_item">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        android:descendantFocusability="afterDescendants">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/iv_uri"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/aaa"
+                android:layout_alignTop="@+id/iv_uri"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:padding="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="77dp"
+                android:inputType="textPersonName"
+                android:hint="添加PPT描述"
+                android:id="@+id/tv_words"
+                android:layout_below="@+id/iv_uri"
+                android:layout_toStartOf="@+id/iv_move"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_weight="0.64"/>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <!-- 屏幕右侧外边部分，正常时在屏幕中处于不可见 -->
+
+    <LinearLayout
+        android:id="@+id/ll_hidden"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#ff0000"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
