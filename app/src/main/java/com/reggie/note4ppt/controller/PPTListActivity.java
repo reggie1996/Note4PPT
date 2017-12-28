@@ -29,6 +29,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 编辑一个会议ppt列表
+ */
 public class PPTListActivity extends Activity implements View.OnClickListener {
 
     public static final int EDITPPT = 1;

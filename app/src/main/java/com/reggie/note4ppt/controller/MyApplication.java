@@ -12,6 +12,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        //FloeDB数据库处理初始化
         FlowManager.init(this);
     }
 }

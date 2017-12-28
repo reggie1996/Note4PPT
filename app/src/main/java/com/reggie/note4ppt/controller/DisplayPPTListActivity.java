@@ -16,6 +16,9 @@ import com.reggie.note4ppt.utils.ShadowTransformer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 用于展示一个会议的ppt ，以左右滑动的形式实现
+ */
 public class DisplayPPTListActivity extends Activity {
 
     private Context mContext;

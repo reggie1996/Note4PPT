@@ -18,6 +18,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 各个会议以时间轴的形式呈现
+ */
 public class CollectionListActivity extends Activity implements View.OnClickListener {
 
     private RecyclerView mRecyclerView;

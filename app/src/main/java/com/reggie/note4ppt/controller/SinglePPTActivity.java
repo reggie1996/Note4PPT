@@ -17,6 +17,9 @@ import com.reggie.note4ppt.R;
 
 import java.io.File;
 
+/**
+ * 单张ppt编辑
+ */
 public class SinglePPTActivity extends Activity implements View.OnClickListener {
 
     public static final int TAKE_PHOTO = 1;//拍照常量
